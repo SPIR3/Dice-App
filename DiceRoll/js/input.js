@@ -1,4 +1,4 @@
-
+//includes inner workings
 $(document).on("pagecreate","#homepage",function(){
     
     alert ("Homepage created!");
@@ -24,6 +24,7 @@ $(document).on("pagecreate","#homepage",function(){
 //dice roll page
 $(document).on("pagecreate","#dicePage",function(){
     
+    //test 
     alert ("dicePage created!");
     
   	$('#Backdice').on("tap",function(){
@@ -36,6 +37,7 @@ $(document).on("pagecreate","#dicePage",function(){
 //coinflip page
 $(document).on("pagecreate","#coinPage",function(){
     
+    //test
     alert ("coinPage created!");
     
   	$('#Backcoin').on("tap",function(){
@@ -48,6 +50,7 @@ $(document).on("pagecreate","#coinPage",function(){
 // magic 8 page
 $(document).on("pagecreate","#magicPage",function(){
     
+    //test
     alert ("magicPage created!");
     
   	$('#Backmagic').on("tap",function(){
