@@ -34,6 +34,19 @@ $(document).on("pagecreate","#dicePage",function(){
     
 });
 
+//six sided dice roll page
+$(document).on("pagecreate","#defaultsix",function(){
+    
+    //test 
+    alert ("defaultsix created!");
+    
+  	$('#Backsix').on("tap",function(){
+	alert ("Go back to dice page!");
+    window.location.href = "#dicePage";
+ 	}); 
+    
+});
+
 //coinflip page
 $(document).on("pagecreate","#coinPage",function(){
     
