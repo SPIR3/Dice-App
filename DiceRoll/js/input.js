@@ -27,6 +27,11 @@ $(document).on("pagecreate","#dicePage",function(){
     //test 
     alert ("dicePage created!");
     
+    $('#Default6.png').on("tap",function(){
+        alert ("Go to six sided dice roll!");
+        window.location.href = "#defaultsix";
+    });
+    
   	$('#Backdice').on("tap",function(){
 	alert ("Go to homepage!");
     window.location.href = "#homepage";
