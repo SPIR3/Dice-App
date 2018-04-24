@@ -32,6 +32,11 @@ $(document).on("pagecreate","#dicePage",function(){
         window.location.href = "#defaultsix";
     });
     
+    $('#MultiDice').on("tap",function(){
+        alert ("Go to multi roll dice!");
+        window.location.href = "#MultiRoll";
+    });
+    
   	$('#Backdice').on("tap",function(){
 	alert ("Go to homepage!");
     window.location.href = "#homepage";
@@ -45,11 +50,28 @@ $(document).on("pagecreate","#defaultsix",function(){
     //test 
     alert ("defaultsix created!");
     
+    $('#Default6Roll').on("tap",function(){
+	var Roll6 = Math.floor(Math.random() * 6) + 1;
+    alert ("Roll Sucessfull! Results: " + Roll6);
+ 	}); 
+    
   	$('#Backsix').on("tap",function(){
 	alert ("Go back to dice page!");
     window.location.href = "#dicePage";
  	}); 
     
+});
+
+//multi dice roll page
+$(document).on("pagecreate","#MultiRoll",function(){
+    
+    //test
+    alert ("multiroll created!");
+    
+    $('#BackMulti').on("tap",function(){
+    alert ("Go back to dice page!");
+    window.location.href = "#dicePage";
+    });
 });
 
 //coinflip page
