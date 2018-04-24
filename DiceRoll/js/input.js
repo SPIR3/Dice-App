@@ -27,7 +27,7 @@ $(document).on("pagecreate","#dicePage",function(){
     //test 
     alert ("dicePage created!");
     
-    $('#Default6.png').on("tap",function(){
+    $('#Default6').on("tap",function(){
         alert ("Go to six sided dice roll!");
         window.location.href = "#defaultsix";
     });
