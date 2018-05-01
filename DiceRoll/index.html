@@ -116,7 +116,7 @@
             <br/>
             Click to roll a D20/20-sided
             </button>
-            </div>
+            </div>        
                 
             </div> 
             
@@ -133,64 +133,36 @@
     <div data-role="page" id="MultiRoll">
         
                 <div>
-        <h3>Choose your dice.</h3>
         
-        <div class="ui-grid-a">    
+        <div class="ui-grid-a">   
             
-            <!-- D6 dice roll button -->
-            <div class="ui-block-a">
-            <button id="Default6">
-            <img src="Default6.png" alt="Roll6" width="160" height="153">
-            <br/>
-            Click to roll a Default/Six Sided
-            </button>
-            </div>
+            <!-- Custom dice set selection form -->
+            <h2>Make a custom dice selection.</h2>
             
-            <!-- D4 dice roll button -->
+                <div class="ui-block-a">
+                <p>Pick a Dice.</p>
+                <select name="diceSelection" id="select1">
+                <option value="Default">Default/6-sided</option>
+                <option value="Option1D4">D4/4-sided</option>
+                <option value="Option2D8">D8/8-sided</option>
+                <option value="Option3D10">D10/10-sided</option>
+                <option value="Option4D12">D12/12-sided</option>
+                <option value="Option5D20">D20/20-sided</option>
+                </select>
+            
+                <p>How many?</p>
+                <input type="range" name="diceNoSlider" id="diceSlide" Value="1" Min="1" max="5">
+            
+                <button id="AddDice">Add dice to selection</button>
+                </div>
+            
             <div class="ui-block-b">
-            <button id="D4dice">
-            <img src="D4.jpg" alt="D4Roll" width="160" height="153">
-            <br/>
-            Click to roll a D4/4-sided
-            </button>
-            </div>
+            <h3>Current dice selected.</h3>
             
-            <!-- D8 dice roll button -->
-            <div class="ui-block-a">
-            <button id="D8dice">
-            <img src="D8.png" alt="D8Roll" width="160" height="153">
-            <br/>
-            Click to roll a D8/8-sided
-            </button>
-            </div>
             
-            <!-- D10 dice roll button -->
-            <div class="ui-block-b">
-            <button id="D10dice">
-            <img src="D10.png" alt="D10Roll" width="160" height="153">
-            <br/>
-            Click to roll a D10/10-sided
-            </button>
-            </div>
             
-            <!-- D12 dice roll button -->
-            <div class="ui-block-a">
-            <button id="D12dice">
-            <img src="D12.png" alt="D12Roll" width="160" height="153">
-            <br/>
-            Click to roll a D12/12-sided
-            </button>
             </div>
-            
-            <!-- D20 dice roll button -->
-            <div class="ui-block-b">
-            <button id="D20dice">
-            <img src="D20.png" alt="D20Roll" width="160" height="153">
-            <br/>
-            Click to roll a D20/20-sided
-            </button>
-            </div>
-            
+                
             </div> 
             
         </div>
