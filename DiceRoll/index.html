@@ -11,7 +11,7 @@
     <style>
         .grid-container {
             display: grid;
-            grid-template-columns: auto auto;
+            grid-template-columns: auto auto auto;
             padding: 10px;
         }
     
@@ -133,26 +133,66 @@
         
     </div>
  
-<!-- Six Sided dice roll page -->
-    <div data-role="page" id="defaultsix">
-        
-        <h3>Six Sided Dice</h3>
-        
-        <button id="Default6Roll">
-        <img src="Default6.png" alt="Roll6" width="160" height="153">
-        <br/>
-        Click to Roll!
-        </button>
-    
-        
-        <div data-role="footer">
-            <button id="Backsix">Back</button>
-        </div>
-        
-    </div>
 
 <!-- Multi dice roll page -->
     <div data-role="page" id="MultiRoll">
+        
+                <div>
+        <h3>Choose your dice.</h3>
+        
+        <div class="grid-container">    
+            
+            <!-- D6 dice roll button -->
+            <div class="grid-item">
+            <button id="Default6">
+            <img src="Default6.png" alt="Roll6" width="160" height="153">
+            <br/>
+            Click to roll a Default/Six Sided
+            </button>
+            </div>
+            
+            <!-- D4 dice roll button -->
+            <div class="grid-item">
+            <button id="D4dice">
+            <img src="D4.jpg" alt="D4Roll" width="160" height="153">
+            <br/>
+            Click to roll a D4/4-sided
+            </button>
+            </div>
+            
+            <!-- D8 dice roll button -->
+            <div class="grid-item">
+            <button id="D8dice">
+            <img src="D8.png" alt="D8Roll" width="160" height="153">
+            <br/>
+            Click to roll a D8/8-sided
+            </button>
+            </div>
+            
+            <!-- D10 dice roll button -->
+            <button id="D10dice">
+            <img src="D10.png" alt="D10Roll" width="160" height="153">
+            <br/>
+            Click to roll a D10/10-sided
+            </button>
+            
+            <!-- D12 dice roll button -->
+            <button id="D12dice">
+            <img src="D12.png" alt="D12Roll" width="160" height="153">
+            <br/>
+            Click to roll a D12/12-sided
+            </button>
+            
+            <!-- D20 dice roll button -->
+            <button id="D20dice">
+            <img src="D20.png" alt="D20Roll" width="160" height="153">
+            <br/>
+            Click to roll a D20/20-sided
+            </button>
+            
+            </div> 
+            
+        </div>
     
         <div data-role="footer">
             <button id="BackMulti">Back</button>
