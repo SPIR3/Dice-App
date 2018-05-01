@@ -27,16 +27,48 @@ $(document).on("pagecreate","#dicePage",function(){
     //test 
     alert ("dicePage created!");
     
-    $('#Default6').on("tap",function(){
-        alert ("Go to six sided dice roll!");
-        window.location.href = "#defaultsix";
-    });
-    
     $('#MultiDice').on("tap",function(){
         alert ("Go to multi roll dice!");
         window.location.href = "#MultiRoll";
     });
     
+    //
+    $('#Default6').on("tap",function(){
+        var Roll6 = Math.floor(Math.random() * 6) + 1;
+        alert ("Roll Sucessful! Results: " + Roll6);
+    });
+    
+    // roll 4 sided dice
+    $('#D4dice').on("tap",function(){
+        var Roll4 = Math.floor(Math.random() * 4) + 1;
+        alert ("Roll Sucessful! Results: " + Roll4);
+    });
+    
+    //roll 8 sided dice
+    $('#D8dice').on("tap",function(){
+        var Roll8 = Math.floor(Math.random() * 8) + 1;
+        alert ("Roll Sucessful! Results: " + Roll8);
+    });
+    
+    //roll 10 sided dice
+    $('#D10dice').on("tap",function(){
+        var Roll10 = Math.floor(Math.random() * 10) + 1;
+        alert ("Roll Sucessful! Results: " + Roll10);
+    });
+    
+    //roll 12 sided dice
+    $('#D12dice').on("tap",function(){
+        var Roll12 = Math.floor(Math.random() * 12) + 1;
+        alert ("Roll Sucessful! Results: " + Roll12);
+    });
+    
+    //roll 20 sided dice
+    $('#D20dice').on("tap",function(){
+        var Roll20 = Math.floor(Math.random() * 20) + 1;
+        alert ("Roll Sucessful! Results: " + Roll20);
+    });
+    
+    //go back a page
   	$('#Backdice').on("tap",function(){
 	alert ("Go to homepage!");
     window.location.href = "#homepage";
