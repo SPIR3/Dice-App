@@ -45,7 +45,7 @@
     
     </div> 
 
-<!-- Dice Page -->
+<!-- ____________________Dice Page________________________________ -->
     <div data-role="page" id="dicePage">
         <div data-role="header">
             <h1>Dice Roll</h1> 
@@ -56,7 +56,7 @@
         
         <div class="ui-grid-a">    
             
-            <!-- multi dice roll button -->
+<!-- ____________________multi dice roll button___________________ -->
             <div class="ui-block-a"><button id="MultiDice">
             <img src="MultiDice.png" alt="RollMany" width="160" height="153">
             <br/>
@@ -64,57 +64,57 @@
             </button>
             </div>
             
-            <!-- D6 dice roll button -->
+<!-- ____________________D6 dice roll button______________________ -->
             <div class="ui-block-b">
             <button id="Default6">
             <img src="Default6.png" alt="Roll6" width="160" height="153">
             <br/>
-            Click to roll a Default/Six Sided
+            Roll a Default/Six Sided
             </button>
             </div>
             
-            <!-- D4 dice roll button -->
+<!-- ____________________D4 dice roll button______________________ -->
             <div class="ui-block-a">
             <button id="D4dice">
             <img src="D4.jpg" alt="D4Roll" width="160" height="153">
             <br/>
-            Click to roll a D4/4-sided
+            Roll a D4/4-sided
             </button>
             </div>
             
-            <!-- D8 dice roll button -->
+<!-- ____________________D8 dice roll button______________________ -->
             <div class="ui-block-b">
             <button id="D8dice">
             <img src="D8.png" alt="D8Roll" width="160" height="153">
             <br/>
-            Click to roll a D8/8-sided
+            Roll a D8/8-sided
             </button>
             </div>
             
-            <!-- D10 dice roll button -->
+<!-- ____________________D10 dice roll button_____________________ -->
             <div class="ui-block-a">
             <button id="D10dice">
             <img src="D10.png" alt="D10Roll" width="160" height="153">
             <br/>
-            Click to roll a D10/10-sided
+            Roll a D10/10-sided
             </button>
             </div>
             
-            <!-- D12 dice roll button -->
+<!-- ____________________D12 dice roll button_____________________ -->
             <div class="ui-block-b">
             <button id="D12dice">
             <img src="D12.png" alt="D12Roll" width="160" height="153">
             <br/>
-            Click to roll a D12/12-sided
+            Roll a D12/12-sided
             </button>
             </div>
             
-            <!-- D20 dice roll button -->
+<!-- ____________________D20 dice roll button_____________________ -->
             <div class="ui-block-a">
             <button id="D20dice">
             <img src="D20.png" alt="D20Roll" width="160" height="153">
             <br/>
-            Click to roll a D20/20-sided
+            Roll a D20/20-sided
             </button>
             </div>        
                 
@@ -129,12 +129,12 @@
     </div>
  
 
-<!-- Multi dice roll page -->
+<!-- ____________________Multi dice roll page_____________________ -->
     <div data-role="page" id="MultiRoll">
         
                 <div>  
             
-            <!-- Custom dice set selection form -->
+<!-- ____________________Custom dice set selection form___________ -->
             <h2>Make a custom dice selection.</h2>
             
                     
@@ -144,6 +144,7 @@
             <button id="SelectionSave">Save selection</button>
             <button id="SelectExisting">Use existing custom set</button>
                 
+<!-- ____________________Dropdown selection box___________________ -->
                 <h3>Pick a Dice.</h3>
                 <select name="diceSelection" id="select1">
                 <option value="Default">Default/6-sided</option>
@@ -161,11 +162,108 @@
     
         <div data-role="footer">
             <button id="BackMulti">Back</button>
-        </div>
+        </div>          
+                
+                </div>
+    </div>
+    
+<!-- _________________default 6 sided roll page__________________ -->
+    <div data-role="page" id="DefaultRollPage">
+    
+        <h3>Roll a Default/6-sided dice</h3>
+        <button id="RollDefault">
+            <img src="Default6.png" alt="Roll6" width="160" height="153">
+            <br/>
+            Click or shake to roll a Default/6-Sided dice
+        </button>
+    
+         <div data-role="footer">
+            <button id="BackDefault">Back</button>
+        </div> 
         
     </div>
     
-<!-- Coin flip page -->
+<!-- _________________4 sided roll page__________________________ -->
+    <div data-role="page" id="Roll4Page">
+    
+        <h3>Roll a 4-sided dice</h3>
+        <button id="Roll4">
+            <img src="D4.jpg" alt="D4Roll" width="160" height="153">
+            <br/>
+            Click or shake to roll a 4-Sided dice
+        </button>
+    
+         <div data-role="footer">
+            <button id="Back4">Back</button>
+        </div> 
+        
+    </div>
+    
+<!-- _________________8 sided roll page__________________________ -->
+    <div data-role="page" id="Roll8Page">
+    
+        <h3>Roll an 8-sided dice</h3>
+        <button id="Roll8">
+            <img src="D8.png" alt="D8Roll" width="160" height="153">
+            <br/>
+            Click or shake to roll an 8-Sided dice
+        </button>
+    
+         <div data-role="footer">
+            <button id="Back8">Back</button>
+        </div> 
+        
+    </div>
+    
+<!-- _________________10 sided roll page__________________________ -->
+    <div data-role="page" id="Roll10Page">
+    
+        <h3>Roll a 10-sided dice</h3>
+        <button id="Roll10">
+            <img src="D10.png" alt="D10Roll" width="160" height="153">
+            <br/>
+            Click or shake to roll a 10-Sided dice
+        </button>
+    
+         <div data-role="footer">
+            <button id="Back10">Back</button>
+        </div> 
+        
+    </div>
+    
+<!-- _________________12 sided roll page__________________________ -->
+    <div data-role="page" id="Roll12Page">
+    
+        <h3>Roll a 12-sided dice</h3>
+        <button id="Roll12">
+            <img src="D12.png" alt="D12Roll" width="160" height="153">
+            <br/>
+            Click or shake to roll a 12-Sided dice
+        </button>
+    
+         <div data-role="footer">
+            <button id="Back12">Back</button>
+        </div> 
+        
+    </div>
+    
+<!-- _________________20 sided roll page__________________________ -->
+    <div data-role="page" id="Roll20Page">
+    
+        <h3>Roll a 20-sided dice</h3>
+        <button id="Roll20">
+            <img src="D20.png" alt="D20Roll" width="160" height="153">
+            <br/>
+            Click or shake to roll a 20-Sided dice
+        </button>
+    
+         <div data-role="footer">
+            <button id="Back20">Back</button>
+        </div> 
+        
+    </div>
+    
+<!-- _________________Coin flip page______________________________ -->
     <div data-role="page" id="coinPage">
         <div data-role="header">
             <h1>Coin Flip</h1>
@@ -177,7 +275,7 @@
     
     </div>
     
-<!-- Magic 8 page -->
+<!-- _________________Magic 8 page________________________________ -->
     <div data-role="page" id="magicPage">
         <div data-role="header">
             <h1>Magic 8 Ball</h1>
