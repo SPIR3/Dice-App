@@ -91,9 +91,6 @@ $(document).on("pagecreate","#DefaultRollPage",function(){
 //four sided dice roll page_________________________________________________________________
 $(document).on("pagecreate","#Roll4Page",function(){
     
-    //test 
-    alert ("four roll created!");
-    
     $('#Roll4').on("tap",function(){
 	var Roll4 = Math.floor(Math.random() * 4) + 1;
     alert ("Roll Sucessfull! Results: " + Roll4);
@@ -109,9 +106,6 @@ $(document).on("pagecreate","#Roll4Page",function(){
 //eight sided dice roll page_______________________________________________________________
 $(document).on("pagecreate","#Roll8Page",function(){
     
-    //test 
-    alert ("eight roll created!");
-    
     $('#Roll8').on("tap",function(){
 	var Roll8 = Math.floor(Math.random() * 8) + 1;
     alert ("Roll Sucessfull! Results: " + Roll8);
@@ -126,9 +120,6 @@ $(document).on("pagecreate","#Roll8Page",function(){
 
 //ten sided dice roll page_________________________________________________________________
 $(document).on("pagecreate","#Roll10Page",function(){
-    
-    //test 
-    alert ("ten roll created!");
     
     $('#Roll10').on("tap",function(){
 	var Roll10 = Math.floor(Math.random() * 10) + 1;
