@@ -65,12 +65,12 @@ $(document).on("pagecreate","#DefaultRollPage",function(){
  	}); 
     
     //on shake do this
-    var onShake = function () {
-    var Roll6 = Math.floor(Math.random() * 6) + 1;
-    alert ("Roll Sucessfull! Results: " + Roll6);      
-    }
+    //var onShake = function () {
+    //var Roll6 = Math.floor(Math.random() * 6) + 1;
+    //alert ("Roll Sucessfull! Results: " + Roll6);      
+    //}
     //watch for shake and call on shake function
-    shake.startWatch(onShake, 40);
+    //shake.startWatch(onShake, 40);
     
 });
 
