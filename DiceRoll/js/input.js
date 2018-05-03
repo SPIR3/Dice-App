@@ -1,31 +1,23 @@
-//includes inner workings
+//includes inner workings________________________________________________________________________
 $(document).on("pagecreate","#homepage",function(){
-    
-    alert ("Homepage created!");
   
   	$('#dice').on("tap",function(){
-	alert ("Go to dice roll!");
     window.location.href = "#dicePage";
  	});                       
 
 	$('#coin').on("tap",function(){
-	alert ("Go to coin flip!");
     window.location.href = "#coinPage";
  	}); 
 
 	$('#eight').on("tap",function(){
-    alert ("Go to Magic 8 Ball!");
     window.location.href = "#magicPage";
   	});   
 
 
 });
 
-//dice roll page
+//dice roll page_______________________________________________________________________________
 $(document).on("pagecreate","#dicePage",function(){
-    
-    //test 
-    alert ("dicePage created!");
     
     $('#MultiDice').on("tap",function(){
         alert ("Go to multi roll dice!");
@@ -62,29 +54,23 @@ $(document).on("pagecreate","#dicePage",function(){
         window.location.href = "#Roll20Page";
     });
     
-    //go back a page________________________________________________________________________
-  	$('#Backdice').on("tap",function(){
-	alert ("Go to homepage!");
-    window.location.href = "#homepage";
- 	}); 
-    
 });
 
 //six sided dice roll page__________________________________________________________________
 $(document).on("pagecreate","#DefaultRollPage",function(){
-    
-    //test 
-    alert ("defaultsix created!");
     
     $('#RollDefault').on("tap",function(){
 	var Roll6 = Math.floor(Math.random() * 6) + 1;
     alert ("Roll Sucessfull! Results: " + Roll6);
  	}); 
     
-  	$('#BackDefault').on("tap",function(){
-	alert ("Go back to dice page!");
-    window.location.href = "#dicePage";
- 	}); 
+    //on shake do this
+    var onShake = function () {
+    var Roll6 = Math.floor(Math.random() * 6) + 1;
+    alert ("Roll Sucessfull! Results: " + Roll6);      
+    }
+    //watch for shake and call on shake function
+    shake.startWatch(onShake, 40);
     
 });
 
@@ -94,11 +80,6 @@ $(document).on("pagecreate","#Roll4Page",function(){
     $('#Roll4').on("tap",function(){
 	var Roll4 = Math.floor(Math.random() * 4) + 1;
     alert ("Roll Sucessfull! Results: " + Roll4);
- 	}); 
-    
-  	$('#Back4').on("tap",function(){
-	alert ("Go back to dice page!");
-    window.location.href = "#dicePage";
  	}); 
     
 });
@@ -111,11 +92,6 @@ $(document).on("pagecreate","#Roll8Page",function(){
     alert ("Roll Sucessfull! Results: " + Roll8);
  	}); 
     
-  	$('#Back8').on("tap",function(){
-	alert ("Go back to dice page!");
-    window.location.href = "#dicePage";
- 	}); 
-    
 });
 
 //ten sided dice roll page_________________________________________________________________
@@ -126,83 +102,44 @@ $(document).on("pagecreate","#Roll10Page",function(){
     alert ("Roll Sucessfull! Results: " + Roll10);
  	}); 
     
-  	$('#Back10').on("tap",function(){
-	alert ("Go back to dice page!");
-    window.location.href = "#dicePage";
- 	}); 
-    
 });
 
 //twelve sided dice roll page______________________________________________________________
 $(document).on("pagecreate","#Roll12Page",function(){
     
-    //test 
-    alert ("twelve roll created!");
-    
     $('#Roll12').on("tap",function(){
 	var Roll12 = Math.floor(Math.random() * 12) + 1;
     alert ("Roll Sucessfull! Results: " + Roll12);
  	}); 
-    
-  	$('#Back12').on("tap",function(){
-	alert ("Go back to dice page!");
-    window.location.href = "#dicePage";
- 	}); 
-    
+      
 });
 
 //twenty sided dice roll page______________________________________________________________
 $(document).on("pagecreate","#Roll20Page",function(){
-    
-    //test 
-    alert ("twenty roll created!");
     
     $('#Roll20').on("tap",function(){
 	var Roll20 = Math.floor(Math.random() * 20) + 1;
     alert ("Roll Sucessfull! Results: " + Roll20);
  	}); 
     
-  	$('#Back20').on("tap",function(){
-	alert ("Go back to dice page!");
-    window.location.href = "#dicePage";
- 	}); 
-    
 });
 
-//multi dice roll page
+//multi dice roll page_______________________________________________________________________
 $(document).on("pagecreate","#MultiRoll",function(){
+
     
-    //test
-    alert ("multiroll created!");
-    
-    $('#BackMulti').on("tap",function(){
-    alert ("Go back to dice page!");
-    window.location.href = "#dicePage";
-    });
 });
 
-//coinflip page
+//coinflip page______________________________________________________________________________
 $(document).on("pagecreate","#coinPage",function(){
     
-    //test
-    alert ("coinPage created!");
     
-  	$('#Backcoin').on("tap",function(){
-	alert ("Go to homepage!");
-    window.location.href = "#homepage";
- 	}); 
     
 });
 
-// magic 8 page
+// magic 8 page______________________________________________________________________________
 $(document).on("pagecreate","#magicPage",function(){
     
-    //test
-    alert ("magicPage created!");
     
-  	$('#Backmagic').on("tap",function(){
-	alert ("Go to homepage!");
-    window.location.href = "#homepage";
- 	}); 
     
 });
