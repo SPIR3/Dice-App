@@ -12,4 +12,5 @@
     </description>
 
    	<plugin name="cordova-plugin-whitelist" version="1" />
+    <plugin src="https://github.com/leecrossley/cordova-plugin-shake.git" name="cordova-plugin-shake" version="0.6.0"/>   
 </widget>

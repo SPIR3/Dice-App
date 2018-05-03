@@ -59,18 +59,20 @@ $(document).on("pagecreate","#dicePage",function(){
 //six sided dice roll page__________________________________________________________________
 $(document).on("pagecreate","#DefaultRollPage",function(){
     
+    var Roll6;
+    
     $('#RollDefault').on("tap",function(){
-	var Roll6 = Math.floor(Math.random() * 6) + 1;
+	Roll6 = Math.floor(Math.random() * 6) + 1;
     alert ("Roll Sucessfull! Results: " + Roll6);
  	}); 
     
     //on shake do this
-    //var onShake = function () {
-    //var Roll6 = Math.floor(Math.random() * 6) + 1;
-    //alert ("Roll Sucessfull! Results: " + Roll6);      
-    //}
+    var onShake6 = function () {
+    Roll6 = Math.floor(Math.random() * 6) + 1;
+    alert ("Roll Sucessfull! Results: " + Roll6);      
+    };
     //watch for shake and call on shake function
-    //shake.startWatch(onShake, 40);
+    shake.startWatch(onShake6, 40);
     
 });
 
