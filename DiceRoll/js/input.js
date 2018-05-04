@@ -179,6 +179,53 @@ $(document).on("pagecreate","#Roll20Page",function(){
 //multi dice roll page_______________________________________________________________________
 $(document).on("pagecreate","#MultiRoll",function(){
 
+    Dice6 = {
+        Dice:
+        {
+            name:"6-Sided",
+            sides:"6"
+        }
+    };
+    
+    Dice4 = {
+        Dice:
+        {
+            name:"4-Sided",
+            sides:"4"
+        }
+    };
+    
+    Dice8 = {
+        Dice:
+        {
+            name:"8-Sided",
+            sides:"8"
+        }
+    };
+    
+    Dice10 = {
+        Dice:
+        {
+            name:"10-Sided",
+            sides:"10"
+        }
+    };
+    
+    Dice12 = {
+        Dice:
+        {
+            name:"12-Sided",
+            sides:"12"
+        }
+    };
+    
+    Dice20 = {
+        Dice:
+        {
+            name:"20-Sided",
+            sides:"20"
+        }
+    };
     
 });
 
