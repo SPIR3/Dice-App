@@ -130,7 +130,7 @@
         
      
             
-<!-- ____________________Custom dice set selection form___________ -->
+<!-- ____________________Custom dice set selection form___________ -->  
             <h2>Make a custom dice selection.</h2>
             
                     
@@ -141,6 +141,17 @@
             <button id="SelectExisting">Use existing custom set</button>
                 
 <!-- ____________________Dropdown selection box___________________ -->
+        <script>
+        function results() {
+            var dicetype = document.getElementById('diceSelection').value;
+            var dicenumber = document.getElementById('diceSlide').value;
+            
+            var listdisplay= document.write(dice number + dicetype);
+            
+        
+        }
+        </script>
+        <form onsubmit="return results();" method="post">  
                 <h3>Pick a Dice.</h3>
                 <select name="diceSelection" id="select1">
                 <option value="Default">Default/6-sided</option>
@@ -154,9 +165,13 @@
                 <h3>How many?</h3>
                 <input type="range" name="diceNoSlider" id="diceSlide" Value="1" Min="1" max="5">
             
-                <button id="AddDice">Add dice to selection</button>     
-                
-                </div>
+                <input id="AddDice" type="submit" value="Add dice to selection"/>     
+        </form>
+        
+
+        
+        
+    </div>
     
 <!-- _________________default 6 sided roll page__________________ -->
     <div data-role="page" id="DefaultRollPage">
